@@ -32,6 +32,8 @@ The *package.json* file has a *scripts* object that defines all command line scr
 * Run tests: `npm run test` (currently does nothing and exits with error)
 * Build dev code and watch: `npm build watch` (builds development code and monitors the js directory for changes to code, then automatically rebuilds)
 
+Note that the builds will take all the JSX files and combine them into file **dist/bundle.js**, which is the only Javascript file referred to by index.html.
+
 ## Server
 
 
