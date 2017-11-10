@@ -1,0 +1,17 @@
+[[source]]
+
+url = "https://pypi.python.org/simple"
+verify_ssl = true
+name = "pypi"
+
+
+[packages]
+
+uvloop = "*"
+aiohttp = "*"
+"aiohttp-jinja2" = "*"
+"jinja2" = "*"
+
+
+[dev-packages]
+
