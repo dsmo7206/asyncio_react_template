@@ -36,4 +36,16 @@ Note that the builds will take all the JSX files and combine them into file **di
 
 ## Server
 
+The server is a Python 3.6+ process that uses the [aiohttp](https://aiohttp.readthedocs.io/en/stable/) library which is based on the new(ish) [asyncio](https://docs.python.org/3/library/asyncio.html) library.
+
+The server runs on a single thread with the asyncio-controlled event loop managing the work.
+
+[pipenv](https://docs.pipenv.org/) is used for managing Python package dependencies - these are stored in the file *Pipfile*. This is a higher level wrapper around [pip](https://pypi.python.org/pypi/pip), which must also be installed.
+
+### Prerequisites
+
+* Python 3.6 must be installed - if it's not on your system, install via apt, yum etc.
+* Install pip: `sudo apt-get install python-pip`
+* Install pipenv: `pip install pipenv`
+* Install Python packages for project: `pipenv install`
 
